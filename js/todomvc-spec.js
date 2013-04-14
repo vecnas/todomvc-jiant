@@ -45,6 +45,11 @@ var todomvcJiant = todomvcJiant || (function (jiant) {
       todoStateChanged: {
         fire: function(todo) {},
         on: function(cb) {}
+      },
+
+      todoTitleModified: {
+        fire: function(todo) {},
+        on: function(cb) {}
       }
 
     },

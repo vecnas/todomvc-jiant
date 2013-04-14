@@ -23,7 +23,7 @@ jiant.onUiBound(function($, app) {
     app.events.todoAdded.on(persist);
     app.events.todoRemoved.on(persist);
     app.events.todoStateChanged.on(persist);
-  }
+    app.events.todoTitleModified.on(persist);  }
 
 
   function persist() {

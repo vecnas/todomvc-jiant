@@ -47,6 +47,7 @@ jiant.onUiBound(function($, app) {
           todoElem.stateMarker.removeClass("editing");
           todo.title = todoElem.titleInput.val();
           todoElem.titleLabel.html(todo.title);
+          app.events.todoTitleModified.fire(todo);
         } else {
           app.model.todo.remove(todo);
         }
